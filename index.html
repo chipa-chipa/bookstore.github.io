@@ -1,0 +1,374 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Polina Rybak
+  ID: 3969997
+  Acknowledgement: google fonts, font awesome, stack overflow-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bookstore</title>
+    <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- header section starts-->
+
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <!--<a href="#" class="bambook">bam<span>book</span></a>-->
+        <img src="img/pngwing.com.png" alt="logo">
+        <div class="navbar">
+            <nav>
+                <button><a href="#home">Home</a></button>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="#category1">Bestsellers</a></button>
+                    <div class="dropdown-content">
+                        <a href="#">novel</a>
+                        <a href="#">comedy</a>
+                        <a href="#">horror</a>
+                    </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="#category2">Novelties</a></button>
+                <div class="dropdown-content">
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="#category3">Sales</a></button>
+                <div class="dropdown-content">
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn">All categories</button>
+                <div class="dropdown-content">
+                    <a href="#">classic</a>
+                    <a href="#">melodrama</a>
+                    <a href="#">history</a>
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+        <div class="icons">
+            <a href="#" class="fa-solid fa-magnifying-glass"></a>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-regular fa-user"></a>
+        </div>
+        
+    </header>
+
+<!-- header section ends-->
+
+<!-- home section starts-->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Your online bookstore</h3>
+            <span> Find your book </span>
+            <p>Some beautiful text about how good reading is</p>
+            <a href="#" class="btn">Shop now</a>
+        </div>
+    </section>
+    
+<!-- home section ends-->
+
+<!--about section starts-->
+
+    <section class="about" id="about">
+
+        <h3 class="heading">About <span> us </span></h3>
+    <div class="main-div">
+        <div class="sub-div"><p> At our Online Book Store, we are passionate about providing 
+            bookworms like you with a vast collection of captivating stories, 
+            informative non-fiction, and everything in between. Whether 
+            you're an avid reader, a dedicated scholar, or just looking 
+            to explore new worlds, we have something for everyone. </p>
+            <button class="btn">Learn more</button>
+        </div>
+            <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0ESzSnb6yQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    </section>
+
+<!--about section ends-->
+
+<!--product section starts-->
+   
+    <section class="products">
+        
+        <h1 id="category1" class="heading"><a href="bestsellers-category-page.html">Bestsellers</a></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <a href="book1-page.html"><img src="img/book1.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name first</h3>
+                    <div class="price"> $10.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <a href="book2-page.html"><img src="img/book2.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name second</h3>
+                    <div class="price"> $12.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-11%</span>
+                <div class="image">
+                    <a href="book3-page.html"><img src="img/book3.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name third</h3>
+                    <div class="price"> $11.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <a href="book4-page.html"><img src="img/book4.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name fourth</h3>
+                    <div class="price"> $15.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+
+
+        </div>
+        <span class="detail"><a href="bestsellers-category-page.html">show more</a></span>
+
+
+        <h1 id="category2" class="heading"><a href="novelties-category-page.html"> Novelties </a></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <a href="book5-page.html"><img src="img/book5.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 5</h3>
+                    <div class="price"> $20.99 <span> $25.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <a href="book6-page.html"><img src="img/book6.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 6</h3>
+                    <div class="price"> $12.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-11%</span>
+                <div class="image">
+                    <a href="book7-page.html"><img src="img/book7.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 7</h3>
+                    <div class="price"> $11.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <a href="book8-page.html"><img src="img/book8.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 8</h3>
+                    <div class="price"> $15.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+
+
+        </div>
+        <span class="detail"><a href="novelties-category-page.html">show more</a></span>
+
+        <h1 id="category3" class="heading"><a href="sales-category-page.html"> Sales </a></h1>
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-5%</span>
+                <div class="image">
+                    <a href="book9-page.html"><img src="img/book9.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 9</h3>
+                    <div class="price"> $20.99 <span> $25.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-15%</span>
+                <div class="image">
+                    <a href="book10-page.html"><img src="img/book10.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 10</h3>
+                    <div class="price"> $12.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-11%</span>
+                <div class="image">
+                    <a href="book11-page.html"><img src="img/book11.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 11</h3>
+                    <div class="price"> $11.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+            <div class="box">
+                <span class="discount">-20%</span>
+                <div class="image">
+                    <a href="book12-page.html"><img src="img/book12.jpg" alt="book"></a>
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn">add to cart</a>
+                        <a href="#" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Book name 12</h3>
+                    <div class="price"> $15.99 <span> $13.99 </span></div>
+                </div>
+            </div>
+
+
+        </div>
+        <span class="detail"><a href="sales-category-page.html">show more</a></span>
+         <div class="btn-wrapper"><div class="btn more"><a href="#">All categories</a></div></div>
+    </section>
+
+<!--product section ends-->
+
+    
+<!-- footer section starts-->
+<section class="footer">
+
+        <div class="box-container">  
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">Home</a>
+                <a href="#about">About Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Copyright</a>
+                <a href="contact-page.html">Contact Us</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">Vietnam</a>
+                <a href="#">Thailand</a>
+                <a href="#">japan</a>
+                <a href="#">Korea</a>
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+99-142-198</a>
+                <a href="#">email@gmail.com</a>
+                <a href="#">Ho Chi Minh city, Vietnam - 000084</a>
+            </div>
+        </div>
+    
+        <div class="credit"> created by <span>ms. polina</span> | all rights reserved </div>
+</section>
+
+    <!-- footer section ends-->
+
+</body>
+</html>

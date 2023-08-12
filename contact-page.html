@@ -1,0 +1,236 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Polina Rybak
+  ID: 3969997
+  Acknowledgement: google fonts, font awesome, stack overflow-->
+
+<!DOCTYPE html>
+<head>
+    <html lang="en" style="display:grid;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bookstore</title>
+    <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- header section starts-->
+
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <!--<a href="#" class="bambook">bam<span>book</span></a>-->
+        <img src="img/pngwing.com.png" alt="logo">
+        <div class="navbar">
+            <nav>
+                <button><a href="index.html">Home</a></button>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="bestsellers-category-page.html#home">Bestsellers</a></button>
+                    <div class="dropdown-content">
+                        <a href="#">novel</a>
+                        <a href="#">comedy</a>
+                        <a href="#">horror</a>
+                    </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="novelties-category-page.html">Novelties</a></button>
+                <div class="dropdown-content">
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="sales-category-page.html#category3">Sales</a></button>
+                <div class="dropdown-content">
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn">All categories</button>
+                <div class="dropdown-content">
+                    <a href="#">classic</a>
+                    <a href="#">melodrama</a>
+                    <a href="#">history</a>
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+        <div class="icons">
+            <a href="#" class="fa-solid fa-magnifying-glass"></a>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-regular fa-user"></a>
+        </div>
+        
+    </header>
+
+<!-- header section ends-->
+
+<!--contact section starts-->
+
+<sectiom class="contact">
+
+    <div class="head-div">
+    <h1 class="heading"> Contact <span>us</span> </h1>
+    <p>We would love to respond to your queries and help you. 
+        Please feel free to get in touch with us. We will reply 
+        within 1 weekday.</p>
+    </div>
+
+    
+    <div class="contact-box">
+
+            <div class="contact-top">
+            <h3>send your <span>request</span></span></h3>
+            <form>
+
+            <div class="input-colomn">
+
+                <div class="input-row">
+                <div>
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="James Bond">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="+84 999 999 999">
+                    </div>
+                    <!--<div class="ch-b-left"><label>receive weekly newsletter</label>
+                        <div><label class="checkbox-container">Yes
+                        <input type="radio" checked="checked" name="a">
+                        <span class="checkmark"></span>
+                        </label>
+                        </div>
+                      
+                      <label class="checkbox-container">no
+                        <input type="radio" name="a">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>-->
+                </div>
+
+                <div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="jamesbond@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Contact purpose</label>
+                        <input type="text" placeholder="I want to sell books">
+                    </div>
+                </div>
+                </div>
+                    
+                    <div class="check-divs">
+
+                    <div class="ch-b-left"><label>receive weekly newsletter</label>
+                        <div><label class="checkbox-container">Yes
+                        <input type="radio" checked="checked" name="a">
+                        <span class="checkmark"></span>
+                        </label>
+                        </div>
+                      
+                        <div><label class="checkbox-container">no
+                        <input type="radio" name="a">
+                        <span class="checkmark"></span>
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="ch-b"><label>contact preference</label>
+                        <div><label class="checkbox-container">by Email
+                        <input type="radio" name="b">
+                        <span class="checkmark"></span>
+                        </label>
+                        </div>
+                      
+                      <div><label class="checkbox-container">by Phone
+                        <input type="radio" name="b">
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+
+
+        </div>
+        
+
+            <div class="message">
+                <label>Message</label>
+                <textarea rows="5" placeholder="your message" ></textarea>
+                <div class="sub-res">
+                    <div  class="btn">
+                        <button type="submit">send</button>
+                    </div>
+                    <div  class="btn">
+                        <button type="reset">reset</button>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+
+</sectiom>
+
+<!--contact section ends-->
+
+
+<!-- footer section starts-->
+<section class="footer">
+
+    <div class="box-container">  
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Vietnam</a>
+            <a href="#">Thailand</a>
+            <a href="#">japan</a>
+            <a href="#">Korea</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+99-142-198</a>
+            <a href="#">email@gmail.com</a>
+            <a href="#">Ho Chi Minh city, Vietnam - 000084</a>
+        </div>
+    </div>
+
+    <div class="credit"> created by <span>ms. polina</span> | all rights reserved </div>
+</section>
+
+<!-- footer section ends-->
+
+
+</body>
+</html>

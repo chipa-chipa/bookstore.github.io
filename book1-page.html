@@ -1,0 +1,208 @@
+<!--RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023B
+  Assessment: Assignment 1
+  Author: Polina Rybak
+  ID: 3969997
+  Acknowledgement: google fonts, font awesome, stack overflow-->
+
+<!DOCTYPE html>
+<html lang="en" style="display: grid;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My bookstore</title>
+    <link href="css/fontawesome.css" rel="stylesheet">
+  <link href="css/solid.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- header section starts-->
+
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <!--<a href="#" class="bambook">bam<span>book</span></a>-->
+        <img src="img/pngwing.com.png" alt="logo">
+        <div class="navbar">
+            <nav>
+                <button><a href="index.html">Home</a></button>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="bestsellers-category-page.html#home">Bestsellers</a></button>
+                    <div class="dropdown-content">
+                        <a href="#">novel</a>
+                        <a href="#">comedy</a>
+                        <a href="#">horror</a>
+                    </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="novelties-category-page.html">Novelties</a></button>
+                <div class="dropdown-content">
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn"><a href="sales-category-page.html#category3">Sales</a></button>
+                <div class="dropdown-content">
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+                </div>
+                <div class="dropdown"> 
+                <button class="dropbtn">All categories</button>
+                <div class="dropdown-content">
+                    <a href="#">classic</a>
+                    <a href="#">melodrama</a>
+                    <a href="#">history</a>
+                    <a href="#">novel</a>
+                    <a href="#">comedy</a>
+                    <a href="#">horror</a>
+                </div>
+            </div>
+            </nav>
+        </div>
+        <div class="icons">
+            <a href="#" class="fa-solid fa-magnifying-glass"></a>
+            <a href="#" class="fa-solid fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="#" class="fa-regular fa-user"></a>
+        </div>
+        
+    </header>
+
+<!-- header section ends-->
+
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bestsellers-category-page.html">Bestsellers</a></li>
+    <li><a href="bestsellers-category-page.html">Novel</a></li>
+    <li>Book name first</li>
+  </ul>
+
+<!--product detail section starts-->
+
+<div class="card-wrapped">
+    <div class="card">
+        <!--card left-->
+        <div class="product-imgs">
+            <div class="img-display">
+                <img src="img/book1.jpg" alr="product-img">
+            </div>
+            <div class="img-select">
+                <div class="img-item">
+                    <a href="#">
+                        <img src="img/book1-1.jpg" alr="product-img">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#">
+                        <img src="img/book1-2.jpg" alr="product-img">
+                    </a>
+                </div>
+                <div class="img-item">
+                    <a href="#">
+                        <img src="img/book1-3.jpg" alr="product-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!--card right-->
+        <div class="product-content">
+            <h2 class="product-title">Book name fisrt</h2>
+            <a href="#" class="product-link">Visit our store</a>
+            <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>4.7 (21)</span>
+            </div>
+            <div class="product-price">
+                <p class="last-price">Old price: <span>$13.99</span></p>
+                <p class="new-price">New price: <span>$10.99 (5%)</span></p>
+            </div>
+            <div class="product-detail">
+                <h2>About this book:</h2>
+                <p>A book description is a short summary of a book's story or 
+                    content that is designed to 'hook' a reader and lead to a sale. 
+                    Typically, the book's description conveys important information about 
+                    its topic or focus (in nonfiction) or the plot and tone (for a novel 
+                    or any other piece of fiction).</p>
+                <p>Throughout the series, Harry is described as having his father's perpetually 
+                    untidy black hair, his mother's bright green eyes, and a lightning bolt-shaped 
+                    scar on his forehead. He is further described as "small and skinny for his age" 
+                    with "a thin face" and "knobbly knees", and he wears Windsor glasses.</p>
+                    <ul>
+                        <li>Available: <span>in stock</span></li>
+                        <li>Category: <span>novel</span></li>
+                        <li>Shipping area: <span>all over the world</span></li>
+                        <li>Shipping fee: <span>free</span></li>
+                    </ul>
+            </div>
+            <div class="purchase-info">
+                <input type="number" min="1" value="1">
+                <button type="button" class="btn">Add to cart <i class="fas fa-shopping-cart"></i></button>
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+</div>
+
+
+<!--product detail section ends-->
+
+
+
+<!-- footer section starts-->
+<section class="footer">
+
+    <div class="box-container">  
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+            <a href="#">Copyright</a>
+            <a href="contact-page.html#home">Contact Us</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my order</a>
+            <a href="#">my favorite</a>
+        </div>
+
+        <div class="box">
+            <h3>locations</h3>
+            <a href="#">Vietnam</a>
+            <a href="#">Thailand</a>
+            <a href="#">japan</a>
+            <a href="#">Korea</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#">+99-142-198</a>
+            <a href="#">email@gmail.com</a>
+            <a href="#">Ho Chi Minh city, Vietnam - 000084</a>
+        </div>
+    </div>
+
+    <div class="credit"> created by <span>ms. polina</span> | all rights reserved </div>
+</section>
+
+<!-- footer section ends-->
+
+
+</body>
+</html>
